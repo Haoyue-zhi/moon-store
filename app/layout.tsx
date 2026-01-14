@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
-// import localFont from "next/font/local";
+import localFont from "next/font/local";
 import "./globals.css";
 
-// const PingFangSC = localFont({
-//   src: [
-//     {
-//       path: "./PingFangSC-Regular.woff2",
-//       weight: "400",
-//       style: "normal",
-//     },
-//     {
-//       path: "./PingFangSC-semibold.woff2",
-//       weight: "600",
-//       style: "normal",
-//     },
-//   ],
-// });
+const PingFangSC = localFont({
+  src: [
+    {
+      path: "./fonts/PingFangSC-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/PingFangSC-Semibold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+  ],
+});
 
 export const metadata: Metadata = {
   title: "阿月严选",
@@ -30,8 +30,8 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body
-        className={`antialiased`}
-        // className={`${PingFangSC.className} antialiased`}
+        // className={`antialiased`}
+        className={`${PingFangSC.className} antialiased`}
       >
         {children}
       </body>
