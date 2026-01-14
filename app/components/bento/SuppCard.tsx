@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
+
 export function SuppCard({
   front, // 正面具名插槽内容
   back, // 背面具名插槽内容
