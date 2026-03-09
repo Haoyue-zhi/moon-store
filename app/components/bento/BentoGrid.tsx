@@ -6,13 +6,13 @@ export function BentoGrid() {
   return (
     <div className="flex size-full flex-col gap-4 lg:grid lg:grid-cols-[2fr_1.5fr_2fr]">
       <MainCard
-        className="order-1 **:data-img:px-16.25"
+        className="order-2 **:data-img:px-16.25"
         title="官方不支持的 Mac，也能升级最新 macOS。"
         subtitle="OpenCore Legacy Patcher"
         src="/OpenCore.png"
       />
 
-      <div className="order-3 flex gap-5 lg:order-2 lg:col-span-1 lg:flex-col">
+      <div className="order-1 flex gap-5 lg:order-2 lg:col-span-1 lg:flex-col">
         <SuppCard
           front={
             <Image
@@ -50,7 +50,7 @@ export function BentoGrid() {
       </div>
 
       <MainCard
-        className="order-2 **:data-img:pb-0 lg:order-3"
+        className="order-3 **:data-img:pb-0 lg:order-3"
         subtitle="🤔思考中......"
         src="/Memoji.png"
       />

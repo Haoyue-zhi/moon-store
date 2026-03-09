@@ -29,12 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body
-        // className={`antialiased`}
-        className={`${PingFangSC.className} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${PingFangSC.className} antialiased`}>{children}</body>
     </html>
   );
 }
